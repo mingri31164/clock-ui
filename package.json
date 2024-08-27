@@ -8,8 +8,20 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
+    "@tsparticles/slim": "^3.5.0",
+    "@tsparticles/vue3": "^3.0.1",
+    "axios": "^1.7.2",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "echarts": "^5.5.1",
+    "element-plus": "^2.7.8",
+    "moment": "^2.30.1",
+    "particles.vue3": "^2.12.0",
+    "vue": "^3.2.13",
+    "vue-amap": "^0.5.10",
+    "vue-router": "^4.4.0",
+    "vuex": "^4.1.0",
+    "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -18,7 +30,11 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint-plugin-vue": "^8.0.3",
+    "less": "^4.2.0",
+    "less-loader": "^12.2.0",
+    "sass": "^1.77.8",
+    "sass-loader": "^16.0.0"
   },
   "eslintConfig": {
     "root": true,
@@ -32,7 +48,10 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {},
+    "globals": {
+      "AMap": "readonly"
+    }
   },
   "browserslist": [
     "> 1%",
